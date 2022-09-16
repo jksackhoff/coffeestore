@@ -1,0 +1,34 @@
+<div class="card mt-3">
+	<div class="card-header" style="background-color:#6A140E; color:#EBD7BE;">
+		<h4>Search For Coffee</h4>
+	</div>
+	<div class="card-body">
+		<table class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+					<th>Product ID</th>
+					<th>Name</th>
+					<th>Origin</th>
+					<th>Process</th>
+					<th>Elevation</th>
+					<th>Price</th>
+					<th>Flavor</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="coffee in coffees" ng-click="goToUpdateView(coffee.id)">
+					<td>{{coffee.productId}}</td>
+					<td>{{coffee.name}}</td>
+					<td>{{coffee.origin}}</td>
+					<td>{{coffee.process}}</td>
+					<td>{{coffee.elevation}}</td>
+					<td>{{coffee.price}}</td>
+					<td>{{coffee.flavor}}</td>									
+				</tr>
+			</tbody>		
+		</table>	
+	</div>
+	<div class="card-footer" style="background-color:#6A140E; color:#EBD7BE;">
+		Please select a coffee for update/delete
+	</div>
+</div>
